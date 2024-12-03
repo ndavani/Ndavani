@@ -1,47 +1,45 @@
-
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
     color: #333;
     line-height: 1.6;
-
+}
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #00796b; /* Soft teal */
 }
 
+a.active, a:hover {
+    color: #004d40; /* Darker teal */
+}
 
 /* Navigation Styles */
 header {
-    color: white;
     position: relative;
-
+    background-color: #004d40; /* Dark teal */
+    color: white;
 }
 
-    .home-header{
-        height:60vh;
-    }
-
+.home-header {
+    height: 9vh;
+}
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background: rgba(0, 0, 0, 0.6);
 }
 
 nav .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
-    color: #fff;
-    position: absolute;
-    left:50%;
-    transform:translateX(-50%);
+
+    color: #ffffff;
 }
 
 nav ul {
@@ -58,93 +56,80 @@ nav ul li a {
     color: white;
     padding: 0.5em 1em;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a.active, nav ul li a:hover {
-    background: #007bff;
+    background-color: #00796b; /* Soft teal background */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 2em 1em;
+    margin-top: 11em;
 }
 
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-top: 0;
-    color:black;
-
-}
-
-.hero table{
-    border-collapse:collapse;
-    text-align: center;
-    width:100%;
-    height: 50%;
-    max-width:1000px;
-    color:black;
-    border:3px solid black;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-}
-
-/* Main Content */
-main {
-
+.hero table {
     margin:0 auto;
-    max-width: 1000px;
-}
-
-    }
-
-h1, h2 {
-    color: #222;
-    text-align: center;
-}
-
-.content {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 1em auto;
-    padding: 1em;
+    border-collapse: collapse;
+    width: 80%;
     max-width: 800px;
+    background: white;
+    color: #333;
+    border: 2px solid #004d40; /* Dark teal border */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.page-title {
-    padding: 0 0; /* Add consistent spacing */
-    text-align: center;
-    font-size: 20px;
-
-}
-
-.page-title h1 {
-    margin: 0; /* Remove all margin */
-    font-size: 2em; /* Control title size */
-    color: #333;
+.hero table th, .hero table td {
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
 /* Main Content */
 main {
-    padding: 1em; /* Ensure uniform padding */
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
+    padding: 2em 1em;
 }
 
+h1, h2 {
+    text-align: center;
+    color: #004d40;
+}
+
+.page-title h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+
+    color: #00796b;
+}
+
+/* New Styles for Content Sections */
+.content {
+    border: none; /* Remove border */
+    margin: 0; /* Remove any margin between sections */
+    padding: 1.5em;
+    max-width: 800px;
+    box-shadow: none; /* Remove shadow */
+    text-align: left; /* Align text for readability */
+}
+
+.content h2 {
+    color: #004d40;
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    margin: 0.5em 0;
+    line-height: 1.8;
+    color: #333; /* Standard text color */
+}
 
 /* Footer */
 footer {
-    background: #222;
+    background: #004d40;
     color: white;
     text-align: center;
     padding: 1em;
